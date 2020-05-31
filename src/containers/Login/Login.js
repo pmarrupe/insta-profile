@@ -2,7 +2,8 @@ import React from 'react';
 import InstagramLogin from 'react-instagram-login';
 
 const responseInstagram = (response) => {
-    console.log(response.toLocaleString().replace('#_',''));
+    console.log(response);
+    console.log(response.toLocaleString());
 }
 
 export default function Login() {
@@ -10,7 +11,7 @@ export default function Login() {
         <InstagramLogin
             clientId="1347672618757609"
             scope="user_profile"
-            redirectUri="https://github.com/pmarrupe/insta-profile"
+            redirectUri="https://master.d3jm5n2ehqc89v.amplifyapp.com"
             onSuccess={responseInstagram}
             onFailure={responseInstagram}
         >
